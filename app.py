@@ -46,16 +46,7 @@ if page=="Introduction":
 
 if page == "Analytics" :
 
-    st.header("Radiation Box Plot")
-    fig = px.box(df, y="Radiation")
-
-    st.plotly_chart(fig,use_container_width=10)
-
-    st.header("Distribution of Radiation")
-    st.text(" \n")
-
-    fig = px.histogram(df, x="Radiation")
-    st.plotly_chart(fig,use_container_width=10)
+   
 
 
     st.header("Scatter Plot (Temperature , Humidity)")
@@ -108,7 +99,16 @@ if page == "Analytics" :
 
 
     
+    st.header("Radiation Box Plot")
+    fig = px.box(df, y="Radiation")
 
+    st.plotly_chart(fig,use_container_width=10)
+
+    st.header("Distribution of Radiation")
+    st.text(" \n")
+
+    fig = px.histogram(df, x="Radiation")
+    st.plotly_chart(fig,use_container_width=10)
 
 
 
