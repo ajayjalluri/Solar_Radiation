@@ -42,11 +42,42 @@ if page=="Introduction":
     st.text(" \n")
 
     st.subheader("Solar radiation, often called the solar resource or just sunlight, is a general term for the electromagnetic radiation emitted by the sun. Solar radiation can be captured and turned into useful forms of energy, such as heat and electricity, using a variety of technologies.")
+    st.text(" \n")
+    st.header("Features That Depend On Solar Radiation(watts per meter**2) Prediction : ")
+    st.text(" \n")
+    st.subheader("Temperature (Fahrenheit)")
+    st.subheader("Humidity (percent)")
+    st.subheader("Barometric pressure (Hg)")
+    st.subheader("Wind direction (degrees) ")
+    st.subheader("Wind speed (miles per hour) ")
+    st.subheader("Sunrise/sunset(Hawaii time) ")
 
+    st.text(" \n")
+    st.text(" \n")
+    st.text(" \n")
+    st.text(" \n")
+    st.text(" \n")
+    st.text(" \n")
 
+    st.subheader("TEAM MEMBERS")
+    st.write("* Chakilam Shiva Kumar")
+    st.write("* Jalluri Ajay Vamsi")
+    st.write("* Amarthaluru Paavan Dileep")
+    st.write("* Morla Naga Manikanta")
+
+    st.header("Faculty Mentor : [Dr.Amarnath Bheemaraju](https://www.bmu.edu.in/faculty/dr-amarnath-bheemaraju/)")
 if page == "Analytics" :
 
-   
+    st.header("Radiation Box Plot")
+    fig = px.box(df, y="Radiation")
+
+    st.plotly_chart(fig,use_container_width=10)
+
+    st.header("Distribution of Radiation")
+    st.text(" \n")
+
+    fig = px.histogram(df, x="Radiation")
+    st.plotly_chart(fig,use_container_width=10)
 
 
     st.header("Scatter Plot (Temperature , Humidity)")
@@ -98,7 +129,6 @@ if page == "Analytics" :
     st.plotly_chart(fig,use_container_width=10)
 
 
-    
     st.header("Radiation Box Plot")
     fig = px.box(df, y="Radiation")
 
@@ -118,8 +148,9 @@ if page == "Analytics" :
 
 
 
+
 if page =="Radiation Prediction" :
-    st.header("Radiation Prediction")
+    st.header("Solar Radiation Prediction")
     form = st.form(key='my_form2')
 
     x1 = form.text_input(label='Temperature')
@@ -144,5 +175,5 @@ if page =="Radiation Prediction" :
         s = std.transform(l)
         pred = knn.predict(s)[0]
         st.text(" \n")
-        a = "Radiation"+ " : " +str(float(pred))
+        a = "Radiation"+ " : " +str(float(pred)) + "watts per meter^2"
         st.write(a)
