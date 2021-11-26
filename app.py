@@ -153,15 +153,15 @@ if page =="Radiation Prediction" :
     st.header("Solar Radiation Prediction")
     form = st.form(key='my_form2')
 
-    x1 = form.text_input(label='Temperature')
+    x1 = form.text_input(label='Temperature (Fahrenheit)')
     form.text(" \n")
-    x2 = form.text_input(label='Pressure')
+    x2 = form.text_input(label='Pressure (Hg)')
     form.text(" \n")
-    x3 = form.text_input(label='Humidity')
+    x3 = form.text_input(label='Humidity (percent)')
     form.text(" \n")
-    x4 = form.text_input(label='WindDirection(Degrees)')
+    x4 = form.text_input(label='WindDirection (Degrees)')
     form.text(" \n")
-    x5 = form.text_input(label='Speed')
+    x5 = form.text_input(label='Speed (miles per hour)')
     form.text(" \n")
 
 
