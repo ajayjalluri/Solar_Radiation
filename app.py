@@ -68,16 +68,7 @@ if page=="Introduction":
     st.write("Faculty Mentor : [Dr.Amarnath Bheemaraju](https://www.bmu.edu.in/faculty/dr-amarnath-bheemaraju/)")
 if page == "Analytics" :
 
-    st.header("Radiation Box Plot")
-    fig = px.box(df, y="Radiation")
-
-    st.plotly_chart(fig,use_container_width=10)
-
-    st.header("Distribution of Radiation")
-    st.text(" \n")
-
-    fig = px.histogram(df, x="Radiation")
-    st.plotly_chart(fig,use_container_width=10)
+    
 
 
     st.header("Scatter Plot (Temperature , Humidity)")
