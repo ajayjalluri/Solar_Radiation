@@ -65,7 +65,7 @@ if page=="Introduction":
     st.write("* Amarthaluru Paavan Dileep")
     st.write("* Morla Naga Manikanta")
 
-    st.header("Faculty Mentor : [Dr.Amarnath Bheemaraju](https://www.bmu.edu.in/faculty/dr-amarnath-bheemaraju/)")
+    st.write("Faculty Mentor : [Dr.Amarnath Bheemaraju](https://www.bmu.edu.in/faculty/dr-amarnath-bheemaraju/)")
 if page == "Analytics" :
 
     st.header("Radiation Box Plot")
