@@ -68,7 +68,7 @@ if page=="Introduction":
     st.write("Faculty Mentor : [Dr.Amarnath Bheemaraju](https://www.bmu.edu.in/faculty/dr-amarnath-bheemaraju/)")
 if page == "Analytics" :
 
-    
+
 
 
     st.header("Scatter Plot (Temperature , Humidity)")
@@ -166,5 +166,5 @@ if page =="Radiation Prediction" :
         s = std.transform(l)
         pred = knn.predict(s)[0]
         st.text(" \n")
-        a = "Radiation"+ " : " +str(float(pred)) + "watts per meter^2"
+        a = "Radiation"+ " : " +str(float(pred)) + " watts per meter^2"
         st.write(a)
