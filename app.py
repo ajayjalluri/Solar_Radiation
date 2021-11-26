@@ -43,7 +43,7 @@ if page=="Introduction":
 
     st.subheader("Solar radiation, often called the solar resource or just sunlight, is a general term for the electromagnetic radiation emitted by the sun. Solar radiation can be captured and turned into useful forms of energy, such as heat and electricity, using a variety of technologies.")
     st.text(" \n")
-    st.header("Features That Depend On Solar Radiation(watts per meter**2) Prediction : ")
+    st.header("Features That Depend On Solar Radiation Prediction : ")
     st.text(" \n")
     st.subheader("Temperature (Fahrenheit)")
     st.subheader("Humidity (percent)")
